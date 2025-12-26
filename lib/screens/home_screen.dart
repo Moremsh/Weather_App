@@ -154,11 +154,11 @@ class HomeScreen extends StatelessWidget {
                                 Row(
                                   children: [
                                     Image.asset(
+                                      /// sunrise image
                                       "assets/images/11.png",
                                       height: 60,
                                       width: 60,
                                     ),
-                                    SizedBox(width: 3),
                                     Column(
                                       crossAxisAlignment:
                                           CrossAxisAlignment.start,
@@ -183,37 +183,40 @@ class HomeScreen extends StatelessWidget {
                                     ),
                                   ],
                                 ),
-                                Row(
-                                  children: [
-                                    Image.asset(
-                                      "assets/images/12.png",
-                                      height: 60,
-                                      width: 60,
-                                    ),
-                                    SizedBox(width: 3),
-                                    Column(
-                                      crossAxisAlignment:
-                                          CrossAxisAlignment.start,
-                                      children: [
-                                        Text(
-                                          "Sunset",
-                                          style: TextStyle(
-                                            color: Colors.grey[600],
-                                            fontSize: 14,
-                                            fontWeight: FontWeight.w500,
+                                Padding(
+                                  padding: const EdgeInsets.only(right: 15.0),
+                                  child: Row(
+                                    children: [
+                                      Image.asset(
+                                        /// sunset image
+                                        "assets/images/12.png",
+                                        height: 60,
+                                        width: 60,
+                                      ),
+                                      Column(
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        children: [
+                                          Text(
+                                            "Sunset",
+                                            style: TextStyle(
+                                              color: Colors.grey[600],
+                                              fontSize: 14,
+                                              fontWeight: FontWeight.w500,
+                                            ),
                                           ),
-                                        ),
-                                        Text(
-                                          DateFormat().add_jm().format(state.weather.sunset!),
-                                          style: TextStyle(
-                                            color: Colors.white,
-                                            fontSize: 14,
-                                            fontWeight: FontWeight.w500,
+                                          Text(
+                                            DateFormat().add_jm().format(state.weather.sunset!),
+                                            style: TextStyle(
+                                              color: Colors.white,
+                                              fontSize: 14,
+                                              fontWeight: FontWeight.w500,
+                                            ),
                                           ),
-                                        ),
-                                      ],
-                                    ),
-                                  ],
+                                        ],
+                                      ),
+                                    ],
+                                  ),
                                 ),
                               ],
                             ),
@@ -228,6 +231,7 @@ class HomeScreen extends StatelessWidget {
                                 Row(
                                   children: [
                                     Image.asset(
+                                      /// temp max image
                                       "assets/images/13.png",
                                       height: 60,
                                       width: 60,
