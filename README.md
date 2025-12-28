@@ -1,16 +1,47 @@
-# weather_app
+# 🌤️ Weather App
 
-A new Flutter project.
+A simple and elegant **Weather App built with Flutter**, using the **OpenWeather API** for live weather data and **Bloc** for state management.
 
-## Getting Started
+This app displays:
+- Current temperature
+- Weather condition (clear, cloudy, rainy, etc.)
+- Sunrise & sunset times
+- Minimum and maximum temperatures
+- Location-based weather
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+## 🚀 Features
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- ✔️ Flutter clean UI
+- ✔️ Bloc state management
+- ✔️ Real-time weather from OpenWeather API
+- ✔️ Location-based weather
+- ✔️ Responsive design
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
+
+## 🛠 Tech Stack
+
+- **Flutter**
+- **Dart**
+- **Bloc / Flutter_Bloc**
+- **OpenWeather API**
+
+---
+
+
+## 🔑 Getting Started
+
+### 1️⃣ Clone the repository
+
+git clone https://github.com/Moremsh/Weather_App.git
+cd Weather_App
+
+2️⃣ Install dependencies
+flutter pub get
+
+3️⃣ Add your OpenWeather API key
+Create a file or add to your config where you store constants (example):
+
+const String openWeatherApiKey = "YOUR_API_KEY_HERE";
